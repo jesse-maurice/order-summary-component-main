@@ -1,0 +1,168 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900 */
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background: hsl(225, 100%, 94%);
+  color: hsl(223, 47%, 23%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.bg-top {
+  position: absolute;
+  top: 3rem;
+  z-index: -1;
+}
+
+.main-container {
+  background: white;
+  border-radius: 1rem;
+  max-width: 350px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.main-container img {
+  border-radius: 1rem 1rem 0 0;
+  max-width: 100%;
+}
+
+.price-container {
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.625rem;
+  height: 70px;
+  width: 17rem;
+  margin-bottom: 1.5rem;
+}
+
+.music-icon {
+  margin-left: 1.5rem;
+  width: 40px;
+}
+
+h1 {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 14px;
+  margin-right: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 span {
+  color: hsl(225, 20%, 56%, 0.6);
+}
+
+a {
+  font-size: 12px;
+  padding-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+a:hover {
+  cursor: pointer;
+  color: hsl(245, 88%, 64%);
+  text-decoration: none;
+}
+
+button {
+  background: hsl(245, 75%, 52%);
+  border: none;
+  width: 17rem;
+  height: 2rem;
+  border-radius: 0.625rem;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  box-shadow: 1em 1em 1em hsl(245, 48%, 85%);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: hsl(245, 88%, 64%);
+  box-shadow: 1em 1em 1em hsl(244, 74%, 85%);
+}
+
+.main-container p {
+  color: hsl(224, 23%, 55%, 0.8);
+  margin-left: 1rem;
+  font-size: 13px;
+}
+
+.order {
+  color: hsl(224, 23%, 55%);
+  font-size: 12px;
+  margin-bottom: 2rem;
+}
+
+.order:hover {
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+}
+
+.attribution {
+  margin: 1rem;
+  font-size: 10px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
